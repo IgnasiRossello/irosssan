@@ -1,0 +1,156 @@
+body {
+     /* contenedor flexible para alinear y distribuir mejor */
+    background: url(https://ashleyfurniture.scene7.com/is/image/AshleyFurniture/U43808-SWATCH-BODY-A-500?); /* color para el fondo de mi proyecto*/
+    background-size: cover;
+    font-family: Arial, sans-serif; /* Fuente */
+    height: 90vh; /* altura al 100% (viewpoint height) */
+    margin: 0; /* no hay margen entre bloques */
+    display: grid;
+    place-items: center;
+}
+
+#Box1 {
+    width: 30%;
+    border-radius: 20px;
+    background-color: #8cffbcc0;
+    margin-bottom: -10%;
+            align-items: center;
+            justify-content: center;
+   }
+
+#Box2 {
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    border-radius: 20px;
+    margin-left: -20%;
+    margin-bottom: 5%;
+   }
+
+#titulo1 {
+    
+    color: rgb(93, 168, 12);
+    font-weight: bold; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    padding-left:5%;
+}
+
+#nombre {
+    
+    color: rgb(93, 168, 12);
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    float: right; /* el texto aparece a la derecha */
+    padding-right: 5%;
+}
+
+#timer { 
+    display: flex;
+    color: rgb(0, 31, 110);
+    background-color: #f40000;
+    margin-left: 46%;
+    margin-right: 46%;
+    margin-bottom: 1%; /* distanciar el cronómetro de la tabla */
+    border-radius: 15%; /* radio del borde para perfilar */
+    font-size: 30px;
+    padding-left: 1%; /* espaciado */
+    justify-content: center;
+}
+
+#board {
+    display: grid; /* permite organizar elementos hijos en filas y columnas*/
+    gap: 0px; /* espacio entre celdas */
+    grid-template-columns: repeat(20, 30px); /* genera un número de cuadrículas con un ancho determinado*/
+    justify-content: center; /* centra los elementos en el eje x */
+    align-items: center; /* centra los elementos en el eje y */
+}
+
+.cell {
+    width: 30px; /* ancho celda*/
+    height: 30px; /* alto celda */
+    border: 0.8px solid #ad5a0d; /* tamaño borde*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* cambia el formato del cursor cuando seleccionas una celda*/
+    font-size: 18px; /* tamaño de la fuente */
+    font-weight: bold; /* texto de los numeritos*/
+    background-color: #8cffbcc0;
+    
+}
+
+.revealed {
+    background-color: #60d4eb; /* color de las casillas reveladas */
+}
+
+.bomb {
+    background-color: #8cffbcc0; /* color de las casillas que contienen bomba */
+}
+
+.flagged {
+    background: url('https://c0.klipartz.com/pngpicture/683/388/gratis-png-buscaminas-el-juego-westing-angry-birds-what´s-up-bar-grill-bomba.png') center center no-repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+}
+
+#boton{
+    font-size: 40px;
+}
+
+#box3 {
+    width: 35%;
+    border-radius: 20px;
+    background-color: #8cffbcc0;
+    margin-top:2%;
+            align-items: center;
+            justify-content: center;
+    padding-left: 20px;
+}
+
+#texto1 {
+    color: rgb(93, 168, 12);
+    font-weight: bold; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    padding-left:2%;
+}
+
+#texto2 {
+    font-weight: bold; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+
+#foto{
+    width: 60%; /* Ancho del contenedor div */
+    height: 60%; /* Altura del contenedor div */
+    padding-left: 11%;
+}
+
+#foto img {
+    max-width: 100%; /* La imagen no excede el ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción original */
+    margin-bottom: 15%;
+}
+
+button {
+    background-color: #8cffbcc0;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: rgb(93, 168, 12);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 80%){ /* Cambiar el formato para que la tabla se ajuste (no va)*/
+    box1{
+        width:0%;
+    }    
+}
+
+
+

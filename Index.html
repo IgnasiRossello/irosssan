@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="es"> <!-- definimos el idioma -->
+<head>
+    <meta charset="UTF-8"> <!-- conjunto de carácteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- se ajusta para móviles -->
+    <link rel="stylesheet" href="Style.css"> <!-- añade el archivo creado Css -->
+
+</head>
+
+<body>
+    <div id="Box1" class="clearfix">
+        <div id="titulo" class="clearfix">
+
+            <div id="titulo1"> <!-- nombre del título para el Css -->
+                <h1> Buscaminas Pro <!-- importancia del título -->
+                    </h1>
+            </div>
+            <div id="timer">0<!-- intento de cronómetro -->
+            </div>
+            <div id="board"> <!-- tablero -->
+                
+            </div>
+        </div>
+        <div id="creador" class="clearfix">
+
+            <div id="nombre">
+                <h1> Created By: Nasi Rosselló
+                    </h1>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div id="Box2" class="clearfix">
+        <div id="boton2">
+            <button id="Reglas">Reglas</button>
+        </div>
+    
+    </div>
+    <script>
+        document.getElementById('Reglas').addEventListener('click', function() {
+            window.location.href = 'Reglas.html';
+        });
+    </script>
+
+<script src="Script.js"> 
+        </script> <!-- se incluye el código JavaScript para el juego -->
+
+</body>
+</html>

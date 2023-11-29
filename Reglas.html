@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="es"> <!-- definimos el idioma -->
+<head>
+    <meta charset="UTF-8"> <!-- conjunto de carácteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- se ajusta para móviles -->
+    <link rel="stylesheet" href="Style.css"> <!-- añade el archivo creado Css -->
+
+</head>
+
+<body>
+    
+    <div id="boton1">
+        <button id="redirectButton">Empezar a jugar</button>
+    </div>
+
+    <script>
+        document.getElementById('redirectButton').addEventListener('click', function() {
+            window.location.href = 'Index.html';
+        });
+    </script>
+    <div id="box3" class="clearfix">
+        <h2 id="texto1">Objetivo</h2>
+
+        <p id="texto2">Buscaminas (nombre original en inglés: Minesweeper) es un videojuego para un jugador creado por Curt Johnson y Robert Donner en 1989. El objetivo del juego es despejar un campo de minas sin detonar ninguna.</p>
+
+        <p id="texto2">A veces hay que elegir de forma aleatoria por falta de información.</p>
+    </div>
+
+    <div id="foto">
+        <img id="foto" src="https://noticias.nmas.com.mx/wp-content/uploads/2021/05/buscaminas.jpg" alt="Foto Super Chula">
+    </div>
+
+    <div id="box3" class="clearfix">
+        <h2 id="texto1">Reglas</h2>
+
+        <p id="texto2">El juego consiste en despejar todas las casillas de una pantalla que no oculten una mina.</p>
+
+        <p id="texto2">Algunas casillas tienen un número, el cual indica la cantidad de minas que hay en las casillas circundantes. Así, si una casilla tiene el número 3, significa que de las ocho casillas que hay alrededor (si no es en una esquina o borde) hay 3 con minas y 5 sin minas. Si se descubre una casilla sin número indica que ninguna de las casillas vecinas tiene mina y éstas se descubren automáticamente.</p>
+
+        <p id="texto2">Si se descubre una casilla con una mina se pierde la partida.</p>
+
+        <p id="texto2">Se puede poner una marca en las casillas que el jugador piensa que hay minas para ayudar a descubrir las que están cerca.</p>
+    </div>
+
+    <div id="foto">
+        <img id="foto" src="https://cdn.alfabetajuega.com/alfabetajuega/2022/01/trucos-buscaminas.jpg" alt="Foto Super Chula">
+    </div>
+
+</body>
